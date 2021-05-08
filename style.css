@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to right, #3d29bf, #08bafc) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Title {
+    top: 50%;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: "Unica One", cursive;
+    color: white;
+    display: block;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    display: block;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+.subText {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.subtitile {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    display: block;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.chevron {
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+}
+
+.chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .chevron {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .chevron {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+        display: none;
+    }
+}
+
+.responsiveIMG {
+    max-width: 60%;
+    height: auto;
+}
+
+@media screen and (max-width: 601px) {
+    .responsiveIMG {
+        max-width: 100%;
+        height: auto;
+    }
+}
+.span{
+
+}

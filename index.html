@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pi_Defense</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="navbar.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon"
+          sizes="32x32">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+<section class="Navigation_Bar" id="MainHome">
+    <nav class="nav">
+        <div class="navContainer">
+            <div class="logo">
+                <a href="#MainHome">EmotePI</a>
+            </div>
+            <div class="main_list" id="mainListDiv">
+                <ul class="navlinks">
+                    <li><a href='#Problem_ID'>Problem</a></li>
+                    <li><a href="#Statistics_ID">Statistics</a></li>
+                    <li><a href='#Solution_ID'>Solution</a></li>
+                    <li><a href='#Demo_ID'>Demo</a></li>
+                    <li><a href="#About_Us_ID">About Us</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    </span>
+        </div>
+    </nav>
+    <script>
+        $('.navTrigger').click(function () {
+            $(this).toggleClass('active');
+            $('#mainListDiv').toggleClass('show_list');
+            $('#mainListDiv').fadeIn();
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</section>
+
+<section class="Title" id="title">
+    <div class="container demo">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <section class="help">
+                    <canvas id="demo-canvas"></canvas>
+                </section>
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    <h1 class="main-title">
+                        <span style="color: #00e676; font-size: 7rem;">E</span>mote_<span style="color: #00e676;font-size: 7rem;">PI</span>
+                    </h1>
+                    <h2 class="subText">
+                        EEG Emotion Classification
+                    </h2>
+                    <br>
+                    <h3 class="subtitile">
+                        A Machine/Deep learning project to detect the emotion of the person using brainwaves to help various people.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <a href="#ProductID">
+            <div class="container" style="align-items: center;justify-content: center;">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div></a>
+    </div>
+</section>
+
+<section class="Problem" id="Problem_ID">
+
+</section>
+
+<section class="Statistics" id="Statistics_ID">
+
+</section>
+
+<section class="Solution" id="Solution_ID">
+
+</section>
+
+<section class="Demo" id="Demo_ID">
+
+</section>
+
+<section class="About_Us" id="About_Us_ID">
+
+</section>
+</body>
+</html>
